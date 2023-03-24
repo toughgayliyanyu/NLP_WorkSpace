@@ -4,7 +4,10 @@ import itertools
 # from visual import show_tfidf   # this refers to visual.py in my [repo](https://github.com/MorvanZhou/NLP-Tutorials/)
 '''
 IF:词频，IDF：逆文本序数
+<<<<<<< HEAD
 tf*idf
+=======
+>>>>>>> feb9d318564832f2170d1116e5d5ab0c5afe6f63
 '''
 docs = [
     "it is a good day, I like to stay here",
