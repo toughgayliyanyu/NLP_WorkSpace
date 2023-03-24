@@ -3,7 +3,7 @@ from collections import Counter
 import itertools
 # from visual import show_tfidf   # this refers to visual.py in my [repo](https://github.com/MorvanZhou/NLP-Tutorials/)
 '''
-IF:词频，IDF：
+IF:词频，IDF：逆文本序数
 '''
 docs = [
     "it is a good day, I like to stay here",
