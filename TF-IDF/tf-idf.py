@@ -1,13 +1,8 @@
 import numpy as np
 from collections import Counter
 import itertools
-# from visual import show_tfidf   # this refers to visual.py in my [repo](https://github.com/MorvanZhou/NLP-Tutorials/)
 '''
 IF:词频，IDF：逆文本序数
-<<<<<<< HEAD
-tf*idf
-=======
->>>>>>> feb9d318564832f2170d1116e5d5ab0c5afe6f63
 '''
 docs = [
     "it is a good day, I like to stay here",
@@ -29,31 +24,32 @@ docs = [
 
 docs_words = [d.replace(",", "").split(" ") for d in docs]
 vocab = set(itertools.chain(*docs_words))
-v2i = {v: i for i, v in enumerate(vocab)}
+v2i = {v: i for i, v in enumerate(vocab)} #将词表生成字典形式，例如：{'I':0,'do':1.....}
 i2v = {i: v for v, i in v2i.items()}
-
+#将上一步生成的字典键值反转：{'0':'I','1':'do'.....}
 
 def safe_log(x):
     mask = x != 0
     x[mask] = np.log(x[mask])
     return x
 
-
+#定义了不同计算tf值的方法，本次使用”log“
 tf_methods = {
         "log": lambda x: np.log(1+x),
         "augmented": lambda x: 0.5 + 0.5 * x / np.max(x, axis=1, keepdims=True),
         "boolean": lambda x: np.minimum(x, 1),
         "log_avg": lambda x: (1 + safe_log(x)) / (1 + safe_log(np.mean(x, axis=1, keepdims=True))),
     }
+#定义了不同计算idf的方法，本次使用"log"
 idf_methods = {
         "log": lambda x: 1 + np.log(len(docs) / (x+1)),
         "prob": lambda x: np.maximum(0, np.log((len(docs) - x) / (x+1))),
         "len_norm": lambda x: x / (np.sum(np.square(x))+1),
     }
 
-
+#计算tf值
 def get_tf(method="log"):
-    # term frequency: how frequent a word appears in a doc
+    #计算doc中每一句话所包含词语的频率
     _tf = np.zeros((len(vocab), len(docs)), dtype=np.float64)    # [n_vocab, n_doc]
     for i, d in enumerate(docs_words):
         counter = Counter(d)
@@ -65,9 +61,9 @@ def get_tf(method="log"):
         raise ValueError
     return weighted_tf(_tf)
 
-
+#计算idf
 def get_idf(method="log"):
-    # inverse document frequency: low idf for a word appears in more docs, mean less important
+    #计算所有句子中每个不重复的单词出现的频次
     df = np.zeros((len(i2v), 1))
     for i in range(len(i2v)):
         d_count = 0
@@ -141,5 +137,3 @@ q = "I get a coffee cup"
 scores = docs_score(q)
 d_ids = scores.argsort()[-3:][::-1]
 print("\ntop 3 docs for '{}':\n{}".format(q, [docs[i] for i in d_ids]))
-
-# show_tfidf(tf_idf.T, [i2v[i] for i in range(tf_idf.shape[0])], "tfidf_matrix")
