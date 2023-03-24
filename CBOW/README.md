@@ -14,7 +14,9 @@ input：爱中，人民  output：华
 
 ## 算法流程
 
-![cbow1](C:\Users\18800\Desktop\cbow1.png)
+
+
+![cbow1](D:\PythonWorkSpace\GitWorkSpace\NLP\NLP_WorkSpace\CBOW\README.assets\cbow1.png)
 
 ![在这里插入图片描述](D:\PythonWorkSpace\GitWorkSpace\NLP\NLP_WorkSpace\CBOW\README.assets\watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBARmVhdGhlcl83NA==,size_20,color_FFFFFF,t_70,g_se,x_16.png)
 
