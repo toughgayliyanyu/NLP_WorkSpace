@@ -14,4 +14,5 @@
 （1）搜索引擎；（2）关键词提取；（3）文本相似性；（4）文本摘要
 # 参考：
 https://blog.csdn.net/weixin_43734080/article/details/122226507?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-122226507-blog-81486700.pc_relevant_multi_platform_whitelistv3&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
 https://github.com/MorvanZhou/NLP-Tutorials/blob/master/tf_idf.py
