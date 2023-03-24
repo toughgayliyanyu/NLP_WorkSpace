@@ -16,9 +16,9 @@ input：爱中，人民  output：华
 
 
 
-![cbow1](D:\PythonWorkSpace\GitWorkSpace\NLP\NLP_WorkSpace\CBOW\README.assets\cbow1.png)
+![cbow1](https://github.com/toughgayliyanyu/NLP_WorkSpace/blob/main/CBOW/README.assets/cbow1.png)
 
-![在这里插入图片描述](D:\PythonWorkSpace\GitWorkSpace\NLP\NLP_WorkSpace\CBOW\README.assets\watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBARmVhdGhlcl83NA==,size_20,color_FFFFFF,t_70,g_se,x_16.png)
+![在这里插入图片描述](https://github.com/toughgayliyanyu/NLP_WorkSpace/blob/main/CBOW/README.assets/watermark%2Ctype_ZHJvaWRzYW5zZmFsbGJhY2s%2Cshadow_50%2Ctext_Q1NETiBARmVhdGhlcl83NA%3D%3D%2Csize_20%2Ccolor_FFFFFF%2Ct_70%2Cg_se%2Cx_16.png)
 
 *第一步：计算输入层
 
@@ -55,7 +55,7 @@ input：[中,华,民,共]   编码后：[2,3,5,6]
 
 输出层是一个 softmax 回归分类器，它的每个结点将会输出一个0-1之间的值（概率），这些所有输出层神经元结点的概率之和为1。
 
-![在这里插入图片描述](D:\PythonWorkSpace\GitWorkSpace\NLP\NLP_WorkSpace\CBOW\README.assets\76e0bcb207624ac9839774ba2de34bb3.png)
+![在这里插入图片描述](https://github.com/toughgayliyanyu/NLP_WorkSpace/blob/main/CBOW/README.assets/76e0bcb207624ac9839774ba2de34bb3.png)
 
 ## 参考
 
