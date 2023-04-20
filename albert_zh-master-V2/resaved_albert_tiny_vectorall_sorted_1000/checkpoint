@@ -1,0 +1,2 @@
+model_checkpoint_path: "resaved_albert_tiny_vectorall_sorted_1000"
+all_model_checkpoint_paths: "resaved_albert_tiny_vectorall_sorted_1000"
