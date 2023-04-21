@@ -8,7 +8,7 @@
 
 ## 主要代码说明
 
-![代码目录](D:\PythonWorkSpace\MyPythonProject\albert_zh-master-V2\Albert-Chinese-Sentence-Encoder.assets\代码目录-1681981802702-2.jpg)
+![代码目录](https://github.com/toughgayliyanyu/NLP_WorkSpace/blob/main/albert_zh-master-V2/Albert-Chinese-Sentence-Encoder.assets/%E4%BB%A3%E7%A0%81%E7%9B%AE%E5%BD%95-1681981802702-2.jpg)
 
 &emsp;&emsp;albert_config：词表和albert_tiny_zh模型json配置文件
 
